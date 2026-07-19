@@ -1,600 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bowen Zhao | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/94955173?v=4&size=64">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bowen Zhao — Backend Developer &amp; Systems Engineer</title>
+<meta name="description" content="Bowen Zhao — hybrid Java backend developer and IT systems/infrastructure engineer based in Alicante, Spain.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/94955173?v=4&size=64">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <img src="https://avatars.githubusercontent.com/u/94955173?v=4&size=64" alt="Bowen Zhao"
-                    class="logo-img">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                 <li><a href="images/Bowen_Zhao_CV.pdf" target="_blank">Resume</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section  -->
-    <section id="home" class="hero">
-        <div id="particles-js"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Bowen Zhao</span></h1>
-                <h2>Software Developer & Engineer</h2>
-                <p>I build creative and functional solutions to complex problems.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
-                </div>
-            </div>
-            <!-- <div class="hero-image">
-                <div class="profile-frame">
-                    <img src="https://avatars.githubusercontent.com/u/94955173?v=4&size=800" alt="Bowen Zhao" class="profile-img">
-                    <div class="frame-decoration"></div>
-                </div>
-            </div> -->
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="arrow">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </section>
+<div class="grid-backdrop" aria-hidden="true"></div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Hello! I'm Bowen Zhao, a passionate software developer with a solid background in computer
-                        science, Multiplatform Application Development (DAM), and System Administration in Networked
-                        Environments (ASIR). I focus on creating efficient, practical tools that solve real-world
-                        problems—whether it's for personal projects, automation, or full-scale applications.
-                    </p>
-
-                    <p>
-                        My journey into tech started with a simple curiosity about how things work. That curiosity turned
-                        into a habit of building everything i found useful such as Java desktop apps, browser
-                        extensions,
-                        and game tools,
-                        to home video server with automation ARR stack (Sonarr, Radarr, Prowlarr, jellyfin), automation
-                        scripts,
-                        and video camera servers. I'm especially interested in system monitoring, API development, and
-                        backend tools that improve user experience and system performance.
-                    </p>
-
-                    <p>
-                        I'm constantly learning and experimenting with new technologies. Lately, I've been picking up
-                        Rust, Go, and Python by building small, real-world projects that help me explore new ideas and
-                        get hands-on experience with different ecosystems.
-                    </p>
-
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source
-                        projects, and continuously learning new skills. I'm particularly interested in system
-                        monitoring, API development, and creating tools that enhance user experiences.
-                    </p>
-
-                    <div class="skills">
-                        <h3>Skills</h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Java</span>
-                                    <span>92%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <span data-progress="92%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Spring Boot</span>
-                                    <span>88%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <span data-progress="88%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>JavaScript</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <span data-progress="85%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Docker API</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <span data-progress="80%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Svelte</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <span data-progress="75%"></span>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>JavaFX</span>
-                                    <span>78%</span>
-                                </div>
-                                <div class="skill-progress">
-                                    <span data-progress="78%"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="about-image">
-                    <div class="floating-image">
-                        <img src="https://avatars.githubusercontent.com/u/94955173?v=4&size=800" alt="About Me">
-                        <div class="about-card">
-                            <div class="about-stat">
-                                <i class="fas fa-code"></i>
-                                <div>
-                                    <h4>1000+</h4>
-                                    <p>Hours of Coding</p>
-                                </div>
-                            </div>
-                            <div class="about-stat">
-                                <i class="fas fa-laptop-code"></i>
-                                <div>
-                                    <h4>15+</h4>
-                                    <p>Projects Completed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-
-            <div class="experience-timeline">
-                <div class="experience-card" data-aos="fade-up">
-                    <div class="company-logo">
-                        <div class="logo-placeholder"><img src="https://portaldelosempleados.com/empresa/images/logo-empresa.png" alt="PENTAPPS"></div>
-                    </div>
-                    <div class="experience-content">
-                        <h3 class="experience-position">Intern</h3>
-                        <h4 class="experience-company">PENTAPPS SL</h4>
-                        <div class="experience-details">
-                            <div class="experience-duration">
-                                <i class="far fa-calendar-alt"></i>
-                                Mar 2025 - Jun 2025 · 4 mos
-                            </div>
-                            <div class="experience-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Sant Joan d'Alacant, Valencian Community, Spain
-                            </div>
-                        </div>
-                        <div class="experience-description">
-                            <p>Worked on developing and maintaining software applications. Assisted in implementing
-                                various features and resolving bugs.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="company-logo">
-                        <div class="logo-placeholder"><img src="https://portal.edu.gva.es/iesdoctorbalmis/wp-content/uploads/sites/434/2025/07/cropped-cropped-I.E.S.-BALMIS_LOGO_01.png" alt="IES Doctorbalmis"></div>
-                    </div>
-                    <div class="experience-content">
-                        <h3 class="experience-position">Student</h3>
-                        <h4 class="experience-company">IES Doctor Balmis</h4>
-                        <div class="experience-details">
-                            <div class="experience-duration">
-                                <i class="far fa-calendar-alt"></i>
-                                Sep 2023 - Jun 2025 · 1 yr 10 mos
-                            </div>
-                            <div class="experience-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Alicante, Valencian Community, Spain
-                            </div>
-                        </div>
-                        <div class="experience-skills">
-                            <span class="experience-skill-tag">
-                                <i class="fas fa-check-circle"></i> Java
-                            </span>
-                            <span class="experience-skill-tag">
-                                <i class="fas fa-check-circle"></i> REST API
-                            </span>
-                            <span class="experience-skill-tag">
-                                <i class="fas fa-plus-circle"></i> 6 more skills
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="company-logo">
-                        <div class="logo-placeholder"><img src="https://metaenlace.com/wp-content/uploads/2021/03/metaenlace-20-aniversario_mov.png" alt="MetaEnlace"></div>
-                    </div>
-                    <div class="experience-content">
-                        <h3 class="experience-position">IT Support Technician</h3>
-                        <h4 class="experience-company">MetaEnlace Sistemas de Información</h4>
-                        <div class="experience-details">
-                            <div class="experience-duration">
-                                <i class="far fa-calendar-alt"></i>
-                                Mar 2022 - Jun 2022 · 4 mos
-                            </div>
-                            <div class="experience-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Murcia, Región de Murcia, Spain · On-site
-                            </div>
-                        </div>
-                        <div class="experience-skills">
-                            <span class="experience-skill-tag">
-                                <i class="fas fa-check-circle"></i> Microsoft SQL Server
-                            </span>
-                            <span class="experience-skill-tag">
-                                <i class="fas fa-check-circle"></i> Google Workspace
-                            </span>
-                            <span class="experience-skill-tag">
-                                <i class="fas fa-plus-circle"></i> 3 more skills
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages Section -->
-    <section id="languages" class="languages">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Languages</h2>
-            <div class="languages-grid">
-                <div class="language-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="language-info">
-                        <h3>Chinese</h3>
-                        <div class="language-level native">
-                            <span class="level-text">Native</span>
-                            <div class="level-bar">
-                                <div class="level-progress" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        <p>Mandarin Chinese - Mother tongue</p>
-                    </div>
-                </div>
-
-                <div class="language-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="language-info">
-                        <h3>Spanish</h3>
-                        <div class="language-level high">
-                            <span class="level-text">High Proficiency</span>
-                            <div class="level-bar">
-                                <div class="level-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <p>Fluent in speaking, reading, and writing</p>
-                    </div>
-                </div>
-
-                <div class="language-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="language-info">
-                        <h3>English</h3>
-                        <div class="language-level high">
-                            <span class="level-text">High Proficiency</span>
-                            <div class="level-bar">
-                                <div class="level-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <p>Professional working proficiency</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="desktop">Desktop</button>
-                <button class="filter-btn" data-filter="extension">Extension</button>
-                <button class="filter-btn" data-filter="tools">Tools</button>
-            </div>
-            <div class="projects-grid">
-
-                <div class="project-card" data-category="desktop">
-                    <div class="project-img">
-                        <img src="images/dashboard.png" alt="Docker Monitoring Dashboard">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <a href="https://github.com/RjZude45OC/Proyecto_TFG_Dashboard" target="_blank"
-                                    class="project-preview">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Docker Monitoring Dashboard</h3>
-                        <p>A comprehensive monitoring dashboard for Docker containers and *arr stack with real-time
-                            updates, resource metrics, and container controls. Final project for Higher Degree in
-                            Multi-platform Application Development.</p>
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>JavaFX</span>
-                            <span>Docker API</span>
-                            <span>WebSocket</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/RjZude45OC/Proyecto_TFG_Dashboard" target="_blank"><i
-                                    class="fab fa-github"></i> Frontend</a>
-                            <a href="https://github.com/RjZude45OC/Proyecto_TFG_Dashboard_api" target="_blank"><i
-                                    class="fab fa-github"></i> API</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="extension">
-                    <div class="project-img">
-                        <img src="images/connect.png" alt="Anilist Connect Extension">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <a href="https://github.com/RjZude45OC/Anilist-Connect" target="_blank"
-                                    class="project-preview">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Anilist Connect</h3>
-                        <p>Chrome extension that allows users to link external sources to Anilist anime, manga, or novel
-                            pages with local storage and easy retrieval functionality.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>Chrome Extension</span>
-                            <span>Chrome Storage API</span>
-                            <span>HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/RjZude45OC/Anilist-Connect" target="_blank"><i
-                                    class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="tools">
-                    <div class="project-img">
-                        <img src="images/tools.png" alt="Genshin Tools">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <a href="https://github.com/RjZude45OC/Genshin-tools" target="_blank"
-                                    class="project-preview">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Genshin Tools</h3>
-                        <p>A collection of tools developed with Svelte for Genshin Impact game, including wish history
-                            tracking and various game-related utilities for players.</p>
-                        <div class="project-tags">
-                            <span>Svelte</span>
-                            <span>JavaScript</span>
-                            <span>CSS</span>
-                            <span>Game Tools</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/RjZude45OC/Genshin-tools" target="_blank"><i
-                                    class="fab fa-github"></i> Code</a>
-                            <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-img">
-                        <img src="images/logo.png" alt="Personal Portfolio">
-                        <div class="project-overlay">
-                            <div class="project-preview">
-                                <a href="https://github.com/BowenZhao-dev/BowenZhao-dev.github.io" target="_blank"
-                                    class="project-preview">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>A modern, responsive portfolio website showcasing my projects and skills with interactive
-                            animations and modern web technologies.</p>
-                        <div class="project-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Responsive Design</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/BowenZhao-dev/BowenZhao-dev.github.io" target="_blank"><i
-                                    class="fab fa-github"></i> Code</a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Site</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-cta">
-                <div class="github-dropdown">
-                    <a href="#" class="btn secondary-btn github-main-btn">
-                        See More on GitHub <i class="fab fa-github"></i>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </a>
-                    <div class="github-accounts-dropdown">
-                        <a href="https://github.com/RjZude45OC" target="_blank" class="github-account-link">
-                            <i class="fab fa-github"></i>
-                            <div class="account-info">
-                                <span class="account-name">RjZude45OC</span>
-                                <span class="account-desc">Main Projects & Development</span>
-                            </div>
-                        </a>
-                        <a href="https://github.com/BowenZhao-dev" target="_blank" class="github-account-link">
-                            <i class="fab fa-github"></i>
-                            <div class="account-info">
-                                <span class="account-name">BowenZhao-dev</span>
-                                <span class="account-desc">Personal Portfolio & Web Projects</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
-
-            <div class="contact-content centered">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-item" data-tilt data-tilt-max="10">
-                            <div class="contact-icon-wrapper">
-                                <i class="fas fa-envelope animated-icon"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Email</h3>
-                                <a href="mailto:zhaobowen622@gmail.com" class="animated-link">zhaobowen622@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item" data-tilt data-tilt-max="10">
-                            <div class="contact-icon-wrapper">
-                                <i class="fab fa-github animated-icon"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>GitHub</h3>
-                                <div class="github-accounts">
-                                    <div class="github-account">
-                                        <div class="github-account-info">
-                                            <div class="github-account-name">
-                                                <a href="https://github.com/BowenZhao-dev" target="_blank"
-                                                    class="animated-link">BowenZhao-dev</a>
-                                            </div>
-                                            <div class="github-account-desc">Professional Work, school related</div>
-                                        </div>
-                                    </div>
-                                    <div class="github-account">
-                                        <div class="github-account-info">
-                                            <div class="github-account-name">
-                                                <a href="https://github.com/RjZude45OC" target="_blank"
-                                                    class="animated-link">RjZude45OC</a>
-                                            </div>
-                                            <div class="github-account-desc">Personal Projects</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contact-item" data-tilt data-tilt-max="10">
-                            <div class="contact-icon-wrapper">
-                                <i class="fab fa-linkedin animated-icon"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>LinkedIn</h3>
-                                <a href="https://www.linkedin.com/in/bowen-zha0/" target="_blank"
-                                    class="animated-link">bowen-zha0</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item" data-tilt data-tilt-max="10">
-                            <div class="contact-icon-wrapper">
-                                <i class="fas fa-map-marker-alt animated-icon"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Location</h3>
-                                <p>Spain, Alicante</p>
-                                <div class="location-pulse"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-decoration">
-                <div class="contact-blob blob-1"></div>
-                <div class="contact-blob blob-2"></div>
-                <div class="floating-particle particle-1"></div>
-                <div class="floating-particle particle-2"></div>
-                <div class="floating-particle particle-3"></div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="https://avatars.githubusercontent.com/u/94955173?v=4&size=64" alt="Bowen Zhao"
-                        class="logo-img">
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/BowenZhao-dev" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/bowen-zha0/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Bowen Zhao. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <div class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <img src="https://avatars.githubusercontent.com/u/94955173?v=4&size=64" alt="Bowen Zhao" class="logo-img">
+      <span class="logo-text">bowen<span class="accent">.</span>zhao</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-nav="home" data-i18n="nav.home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-nav="about" data-i18n="nav.about">About</a></li>
+      <li><a href="#infra" class="nav-link" data-nav="infra" data-i18n="nav.infra">Infra</a></li>
+      <li><a href="#experience" class="nav-link" data-nav="experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-nav="projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link" data-nav="contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-opt active" data-lang="en">EN</span><span class="lang-sep">/</span><span class="lang-opt" data-lang="es">ES</span>
+      </button>
+      <a href="images/Bowen_Zhao_CV.pdf" target="_blank" class="btn nav-resume"><i class="fas fa-arrow-down"></i> <span data-i18n="nav.resume">Resume</span></a>
     </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+</nav>
 
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot dot-green"></span> <span data-i18n="hero.eyebrow">ALL SYSTEMS OPERATIONAL</span></div>
+      <h1 data-i18n="hero.h1">Hi, I'm <span class="highlight">Bowen Zhao</span></h1>
+      <h2><span data-i18n="hero.h2a">Backend Developer</span> <span class="slash">/</span> <span data-i18n="hero.h2b">Systems &amp; Infrastructure Engineer</span></h2>
+      <p data-i18n="hero.p">I move comfortably between the code and the infrastructure underneath it — from Java/Spring Boot backends to Active Directory, Docker, and the network that keeps it all breathing.</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn primary-btn" data-i18n="hero.cta1">View My Work</a>
+        <a href="#contact" class="btn secondary-btn" data-i18n="hero.cta2">Contact Me</a>
+      </div>
+      <div class="hero-meta">
+        <span><i class="fas fa-location-dot"></i> <span data-i18n="hero.meta1">San Juan, Alicante, España</span></span>
+        <span><i class="fas fa-language"></i> <span data-i18n="hero.meta2">中文 · Español · English</span></span>
+        <span><i class="fas fa-plane"></i> <span data-i18n="hero.meta3">Open to relocation</span></span>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="tdot t-red"></span><span class="tdot t-amber"></span><span class="tdot t-green"></span>
+          <span class="terminal-title">status — bowen@homelab</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <p><span class="prompt">$</span> <span class="type-line" data-text="whoami"></span></p>
+          <p class="out" data-i18n="term.out1">bowen-zhao — hybrid dev/ops profile</p>
+          <p><span class="prompt">$</span> <span class="type-line" data-text="uptime --homelab"></span></p>
+          <p class="out" data-i18n="term.out2">12+ months, 0 data loss</p>
+          <p><span class="prompt">$</span> <span class="type-line" data-text="cat skills.txt | grep core"></span></p>
+          <p class="out">Java · Spring Boot · Docker · Active Directory · Linux</p>
+          <span class="cursor">▌</span>
+        </div>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label" data-i18n="stat.label1">applications sent</span></div>
+        <div class="stat"><span class="stat-num">90%+</span><span class="stat-label" data-i18n="stat.label2">same-day tickets</span></div>
+        <div class="stat"><span class="stat-num">16+</span><span class="stat-label" data-i18n="stat.label3">services self-hosted</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator"><div class="mouse"><div class="wheel"></div></div></div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="module-tag"><span class="dot dot-green"></span> <span data-i18n="about.tag">// ABOUT</span></span>
+      <h2 class="section-title" data-i18n="about.title">About Me</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p data-i18n="about.p1">I'm a hybrid IT profile — half backend developer, half sysadmin — trained through Spain's vocational track: SMR → ASIR → DAM. That progression means I've spent as much time inside Active Directory and PowerShell as I have inside Spring Boot and REST APIs, and I genuinely enjoy both sides.</p>
+        <p data-i18n="about.p2">My homelab is where that hybrid identity actually lives: a Linux server running a *arr automation stack, Docker containers, Tailscale VPN, and an Oracle Cloud instance, all monitored through a JavaFX dashboard I built myself. It's been running 12+ months without losing data — which is basically my resume in one sentence.</p>
+        <p data-i18n="about.p3">Native in Mandarin and Cantonese, professional in Spanish and English — I've used that directly to support international users, including remote English-language IT support for teams in the Netherlands.</p>
+        <p data-i18n="about.p4">Currently deep in an active job search across IT support, sysadmin, and junior backend roles — direct and honest in how I present my experience, no inflated titles.</p>
+
+        <div class="skills">
+          <h3 data-i18n="skills.title">Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><div class="skill-info"><span>Java</span><span>92%</span></div><div class="skill-progress"><span data-progress="92%"></span></div></div>
+            <div class="skill-bar"><div class="skill-info"><span data-i18n="skill.docker">Docker &amp; Infra (Proxmox, Linux)</span><span>88%</span></div><div class="skill-progress"><span data-progress="88%"></span></div></div>
+            <div class="skill-bar"><div class="skill-info"><span data-i18n="skill.spring">Spring Boot &amp; REST APIs</span><span>85%</span></div><div class="skill-progress"><span data-progress="85%"></span></div></div>
+            <div class="skill-bar"><div class="skill-info"><span data-i18n="skill.ad">Windows Server &amp; Active Directory</span><span>85%</span></div><div class="skill-progress"><span data-progress="85%"></span></div></div>
+            <div class="skill-bar"><div class="skill-info"><span data-i18n="skill.sql">SQL &amp; Databases</span><span>82%</span></div><div class="skill-progress"><span data-progress="82%"></span></div></div>
+            <div class="skill-bar"><div class="skill-info"><span data-i18n="skill.js">JavaScript / React</span><span>75%</span></div><div class="skill-progress"><span data-progress="75%"></span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-header"><i class="fas fa-server"></i> system.spec</div>
+        <dl class="spec-list">
+          <div><dt data-i18n="spec.k1">hostname</dt><dd>bowen-zhao</dd></div>
+          <div><dt data-i18n="spec.k2">role</dt><dd data-i18n="spec.v2">Backend Dev / Systems Engineer</dd></div>
+          <div><dt data-i18n="spec.k3">location</dt><dd>San Juan, Alicante, ES</dd></div>
+          <div><dt data-i18n="spec.k4">languages</dt><dd data-i18n="spec.v4">中文 (native) · Español (C1) · English (B2)</dd></div>
+          <div><dt data-i18n="spec.k5">education</dt><dd>DAM · ASIR · SMR</dd></div>
+          <div><dt data-i18n="spec.k6">status</dt><dd><span class="dot dot-green"></span> <span data-i18n="spec.v6">actively interviewing</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Infrastructure status panel -->
+<section id="infra" class="infra">
+  <div class="container">
+    <div class="section-head">
+      <span class="module-tag"><span class="dot dot-green"></span> <span data-i18n="infra.tag">// INFRASTRUCTURE</span></span>
+      <h2 class="section-title" data-i18n="infra.title">Homelab Status</h2>
+      <p class="section-sub" data-i18n="infra.sub">Real services I run and maintain, day to day — not a demo.</p>
+    </div>
+    <div class="infra-grid">
+      <div class="infra-item"><span class="dot dot-green pulse"></span><div><h4>Sonarr / Radarr / Prowlarr</h4><p data-i18n="infra.d1">Media automation stack</p></div></div>
+      <div class="infra-item"><span class="dot dot-green pulse"></span><div><h4>Jellyfin</h4><p data-i18n="infra.d2">Self-hosted media server</p></div></div>
+      <div class="infra-item"><span class="dot dot-green pulse"></span><div><h4>qBittorrent</h4><p data-i18n="infra.d3">Download client, containerized</p></div></div>
+      <div class="infra-item"><span class="dot dot-cyan pulse"></span><div><h4>Tailscale VPN</h4><p data-i18n="infra.d4">Remote mesh access, any network</p></div></div>
+      <div class="infra-item"><span class="dot dot-cyan pulse"></span><div><h4>Oracle Cloud (ARM)</h4><p data-i18n="infra.d5">Ubuntu, 24GB RAM — Syncplay server</p></div></div>
+      <div class="infra-item"><span class="dot dot-amber pulse"></span><div><h4>Raspberry Pi 4</h4><p data-i18n="infra.d6">PoE camera bridge + motionEye</p></div></div>
+      <div class="infra-item"><span class="dot dot-green pulse"></span><div><h4>Docker</h4><p data-i18n="infra.d7">6+ containerized services in production</p></div></div>
+      <div class="infra-item"><span class="dot dot-green pulse"></span><div><h4 data-i18n="infra.t8">Backups</h4><p data-i18n="infra.d8">Automated via Bash — 0 data loss, 12+ months</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="section-head">
+      <span class="module-tag"><span class="dot dot-green"></span> <span data-i18n="exp.tag">// EXPERIENCE</span></span>
+      <h2 class="section-title" data-i18n="exp.title">Work Experience</h2>
+    </div>
+    <div class="experience-timeline">
+
+      <div class="experience-card">
+        <div class="experience-marker"></div>
+        <div class="experience-content">
+          <div class="experience-details">
+            <div class="experience-duration"><i class="far fa-calendar-alt"></i> <span data-i18n="exp1.duration">Mar 2025 – Jun 2025 · 4 mos</span></div>
+          </div>
+          <h3 class="experience-position" data-i18n="exp1.position">Full Stack Developer — Internship</h3>
+          <h4 class="experience-company">Pentapps · San Juan, Alicante, España</h4>
+          <div class="experience-description">
+            <ul>
+              <li data-i18n="exp1.b1">Improved backend reliability and performance ~40% through debugging, refactoring, REST integration, and Git/Maven workflows in an agile team.</li>
+              <li data-i18n="exp1.b2">Led migration of a business-critical warehouse system from legacy Visual Basic to a modern C#/Java stack.</li>
+              <li data-i18n="exp1.b3">Deployed and managed containerized dev/QA environments with Docker on Proxmox, folding the workflow into CI/CD.</li>
+              <li data-i18n="exp1.b4">Kept zero unplanned connectivity interruptions for 4 months by configuring network infrastructure and firewall rules.</li>
+            </ul>
+          </div>
+          <div class="experience-skills">
+            <span class="experience-skill-tag">Java</span><span class="experience-skill-tag">C#</span>
+            <span class="experience-skill-tag">Docker</span><span class="experience-skill-tag">Proxmox</span>
+            <span class="experience-skill-tag">SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-marker"></div>
+        <div class="experience-content">
+          <div class="experience-details">
+            <div class="experience-duration"><i class="far fa-calendar-alt"></i> <span data-i18n="exp2.duration">Mar 2023 – Aug 2023 · 6 mos</span></div>
+          </div>
+          <h3 class="experience-position" data-i18n="exp2.position">IT Support &amp; Systems Technician</h3>
+          <h4 class="experience-company">Metaenlace Sistemas de Información — <span data-i18n="exp2.onsite">on-site at</span> Sprinter Megacentro del Deporte · Alicante</h4>
+          <div class="experience-description">
+            <ul>
+              <li data-i18n="exp2.b1">Resolved N1/N2 incidents end-to-end via Jira ITSM — over 90% same-day resolution, averaging 15–20 tickets/day, consistently meeting SLAs.</li>
+              <li data-i18n="exp2.b2">Administered Active Directory for 100+ users across logistics, design, and operations — account provisioning, group policy, access management.</li>
+              <li data-i18n="exp2.b3">Automated routine Windows administration with PowerShell scripts, cutting manual effort on repetitive checks.</li>
+              <li data-i18n="exp2.b4">Diagnosed and resolved LAN, DNS, and DHCP issues across a multi-department warehouse network.</li>
+              <li data-i18n="exp2.b5">Provided remote IT support to stores in the Netherlands, coordinating diagnostics across the language barrier with zero escalations.</li>
+            </ul>
+          </div>
+          <div class="experience-skills">
+            <span class="experience-skill-tag">Active Directory</span><span class="experience-skill-tag">Jira</span>
+            <span class="experience-skill-tag">PowerShell</span><span class="experience-skill-tag">Windows Server</span>
+            <span class="experience-skill-tag">Networking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-marker"></div>
+        <div class="experience-content">
+          <div class="experience-details">
+            <div class="experience-duration"><i class="far fa-calendar-alt"></i> <span data-i18n="exp3.duration">Jan 2021 – Jun 2024 · 3 yrs 6 mos</span></div>
+          </div>
+          <h3 class="experience-position" data-i18n="exp3.position">Store Operations &amp; Retail Assistant</h3>
+          <h4 class="experience-company">Mercamigo · Alicante, España</h4>
+          <div class="experience-description">
+            <ul>
+              <li data-i18n="exp3.b1">Handled customer service, inventory management, and daily incident resolution in a fast-paced retail environment — organizational and problem-solving skills that transfer directly to IT incident management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="education">
+  <div class="container">
+    <div class="section-head">
+      <span class="module-tag"><span class="dot dot-green"></span> <span data-i18n="edu.tag">// EDUCATION</span></span>
+      <h2 class="section-title" data-i18n="edu.title">Education</h2>
+    </div>
+    <div class="education-grid">
+      <div class="edu-card">
+        <div class="edu-year">2023 – 2025</div>
+        <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+        <h4>IES Doctor Balmis · Alicante</h4>
+        <p data-i18n="edu1.p">OOP, database design, web/mobile development and software engineering in Java, C#, JavaScript and Android. TFG: a JavaFX + Spring Boot dashboard monitoring Docker containers via WebSocket.</p>
+      </div>
+      <div class="edu-card">
+        <div class="edu-year">2021 – 2023</div>
+        <h3>Técnico Superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
+        <h4>IES Doctor Balmis · Alicante</h4>
+        <p data-i18n="edu2.p">Windows/Linux server administration, Active Directory, TCP/IP, VLANs, VPNs, firewalls, PowerShell scripting, virtualization and IT infrastructure management.</p>
+      </div>
+      <div class="edu-card">
+        <div class="edu-year">2017 – 2019</div>
+        <h3>Técnico en Sistemas Microinformáticos y Redes (SMR)</h3>
+        <h4>IES Mutxamel · Alicante</h4>
+        <p data-i18n="edu3.p">Hardware assembly and repair, OS installation and configuration, basic networking, and end-user technical support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Languages -->
+<section id="languages" class="languages">
+  <div class="container">
+    <div class="section-head">
+      <span class="module-tag"><span class="dot dot-green"></span> <span data-i18n="lang.tag">// LANGUAGES</span></span>
+      <h2 class="section-title" data-i18n="lang.title">Languages</h2>
+    </div>
+    <div class="languages-grid">
+      <div class="language-card">
+        <h3 data-i18n="lang1.name">Chinese</h3>
+        <div class="language-level native"><span class="level-text" data-i18n="lang1.level">Native</span><div class="level-bar"><div class="level-progress" data-width="100%"></div></div></div>
+        <p data-i18n="lang1.desc">Mandarin &amp; Cantonese — mother tongue</p>
+      </div>
+      <div class="language-card">
+        <h3 data-i18n="lang2.name">Spanish</h3>
+        <div class="language-level high"><span class="level-text" data-i18n="lang2.level">C1 · Professional</span><div class="level-bar"><div class="level-progress" data-width="90%"></div></div></div>
+        <p data-i18n="lang2.desc">Fluent in speaking, reading and writing</p>
+      </div>
+      <div class="language-card">
+        <h3 data-i18n="lang3.name">English</h3>
+        <div class="language-level high"><span class="level-text" data-i18n="lang3.level">B2 · Intermediate-High</span><div class="level-bar"><div class="level-progress" data-width="72%"></div></div></div>
+        <p data-i18n="lang3.desc">Verified by official test, July 2026 — used daily for remote international IT support</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-head">
+      <span class="module-tag"><span class="dot dot-green"></span> <span data-i18n="proj.tag">// PROJECTS</span></span>
+      <h2 class="section-title" data-i18n="proj.title">My Projects</h2>
+    </div>
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+      <button class="filter-btn" data-filter="web" data-i18n="filter.web">Web</button>
+      <button class="filter-btn" data-filter="desktop" data-i18n="filter.desktop">Desktop</button>
+      <button class="filter-btn" data-filter="extension" data-i18n="filter.extension">Extension</button>
+      <button class="filter-btn" data-filter="tools" data-i18n="filter.tools">Tools</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card" data-category="desktop">
+        <div class="project-img"><img src="images/dashboard.png" alt="Docker Monitoring Dashboard">
+          <div class="project-overlay"><a href="https://github.com/RjZude45OC/Proyecto_TFG_Dashboard" target="_blank"><i class="fas fa-eye"></i></a></div>
+        </div>
+        <div class="project-info">
+          <h3>Docker Monitoring Dashboard</h3>
+          <p data-i18n="p1.desc">JavaFX + Spring Boot dashboard for Docker containers and the *arr stack — real-time updates, resource metrics, container controls. My DAM final project.</p>
+          <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>JavaFX</span><span>Docker API</span><span>WebSocket</span></div>
+          <div class="project-links">
+            <a href="https://github.com/RjZude45OC/Proyecto_TFG_Dashboard" target="_blank"><i class="fab fa-github"></i> <span data-i18n="link.frontend">Frontend</span></a>
+            <a href="https://github.com/RjZude45OC/Proyecto_TFG_Dashboard_api" target="_blank"><i class="fab fa-github"></i> API</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="desktop">
+        <div class="project-img project-tile" style="--tile-color:#7c6af7;"><i class="fas fa-play-circle"></i>
+          <div class="project-overlay"><a href="https://github.com/RjZude45OC/Cowatch" target="_blank"><i class="fas fa-eye"></i></a></div>
+        </div>
+        <div class="project-info">
+          <h3>Cowatch</h3>
+          <p data-i18n="p2.desc">Cross-platform JavaFX client that drives MPV over IPC to keep video playback in sync across users. Integrates Jellyfin session reporting and AniList progress tracking, with CI/CD across Windows/Linux/macOS.</p>
+          <div class="project-tags"><span>Java</span><span>JavaFX</span><span>Sockets/IPC</span><span>GitHub Actions</span><span>Jellyfin API</span></div>
+          <div class="project-links"><a href="https://github.com/RjZude45OC/Cowatch" target="_blank"><i class="fab fa-github"></i> <span data-i18n="link.code">Code</span></a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="desktop tools">
+        <div class="project-img project-tile" style="--tile-color:#43c6e0;"><i class="fas fa-language"></i>
+          <div class="project-overlay"><a href="https://github.com/RjZude45OC/MangaLens" target="_blank"><i class="fas fa-eye"></i></a></div>
+        </div>
+        <div class="project-info">
+          <h3>MangaLens</h3>
+          <p data-i18n="p3.desc">PySide6 desktop app for real-time manga OCR and translation via a local LLM through Ollama, with a dual-strategy bubble detector and a debug window for tuning the pipeline.</p>
+          <div class="project-tags"><span>Python</span><span>PySide6</span><span>OCR</span><span>Ollama</span></div>
+          <div class="project-links"><a href="https://github.com/RjZude45OC/MangaLens" target="_blank"><i class="fab fa-github"></i> <span data-i18n="link.code">Code</span></a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="project-img project-tile" style="--tile-color:#f5a623;"><i class="fas fa-book-open"></i>
+          <div class="project-overlay"><a href="https://github.com/RjZude45OC" target="_blank"><i class="fas fa-eye"></i></a></div>
+        </div>
+        <div class="project-info">
+          <h3 data-i18n="p4.title">Self-Hosted Manga Reader</h3>
+          <p data-i18n="p4.desc">Full-stack reader (Go backend, React frontend) with SQLite, AniList OAuth2, a concurrent CBZ downloader, and a scraper handling Cloudflare and custom chapter decryption.</p>
+          <div class="project-tags"><span>Go</span><span>React</span><span>SQLite</span><span>OAuth2</span></div>
+          <div class="project-links"><a href="https://github.com/RjZude45OC" target="_blank"><i class="fab fa-github"></i> <span data-i18n="link.code">Code</span></a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="extension">
+        <div class="project-img"><img src="images/connect.png" alt="Anilist Connect Extension">
+          <div class="project-overlay"><a href="https://github.com/RjZude45OC/Anilist-Connect" target="_blank"><i class="fas fa-eye"></i></a></div>
+        </div>
+        <div class="project-info">
+          <h3>Anilist Connect</h3>
+          <p data-i18n="p5.desc">Chrome extension linking external sources to AniList anime, manga, or novel pages, with local storage and easy retrieval.</p>
+          <div class="project-tags"><span>JavaScript</span><span>Chrome Extension</span><span>Chrome Storage API</span></div>
+          <div class="project-links"><a href="https://github.com/RjZude45OC/Anilist-Connect" target="_blank"><i class="fab fa-github"></i> <span data-i18n="link.code">Code</span></a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="tools">
+        <div class="project-img"><img src="images/tools.png" alt="Genshin Tools">
+          <div class="project-overlay"><a href="https://github.com/RjZude45OC/Genshin-tools" target="_blank"><i class="fas fa-eye"></i></a></div>
+        </div>
+        <div class="project-info">
+          <h3>Genshin Tools</h3>
+          <p data-i18n="p6.desc">A collection of Svelte-built tools for Genshin Impact, including wish history tracking and other game-related utilities.</p>
+          <div class="project-tags"><span>Svelte</span><span>JavaScript</span><span>CSS</span></div>
+          <div class="project-links"><a href="https://github.com/RjZude45OC/Genshin-tools" target="_blank"><i class="fab fa-github"></i> <span data-i18n="link.code">Code</span></a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="project-img"><img src="images/logo.png" alt="Personal Portfolio">
+          <div class="project-overlay"><a href="https://github.com/BowenZhao-dev/BowenZhao-dev.github.io" target="_blank"><i class="fas fa-eye"></i></a></div>
+        </div>
+        <div class="project-info">
+          <h3 data-i18n="p7.title">Personal Portfolio Website</h3>
+          <p data-i18n="p7.desc">This site — a status-page-themed portfolio showing real numbers from the homelab, projects, and job search.</p>
+          <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://github.com/BowenZhao-dev/BowenZhao-dev.github.io" target="_blank"><i class="fab fa-github"></i> <span data-i18n="link.code">Code</span></a>
+            <a href="https://bowenzhao-dev.github.io" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-i18n="link.live">Live Site</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projects-cta">
+      <div class="github-dropdown">
+        <button class="btn secondary-btn github-main-btn" id="githubDropdownBtn">
+          <span data-i18n="gh.more">See More on GitHub</span> <i class="fab fa-github"></i> <i class="fas fa-chevron-down dropdown-arrow"></i>
+        </button>
+        <div class="github-accounts-dropdown" id="githubDropdown">
+          <a href="https://github.com/RjZude45OC" target="_blank" class="github-account-link">
+            <i class="fab fa-github"></i>
+            <div class="account-info"><span class="account-name">RjZude45OC</span><span class="account-desc" data-i18n="gh.desc1">Main Projects &amp; Development</span></div>
+          </a>
+          <a href="https://github.com/BowenZhao-dev" target="_blank" class="github-account-link">
+            <i class="fab fa-github"></i>
+            <div class="account-info"><span class="account-name">BowenZhao-dev</span><span class="account-desc" data-i18n="gh.desc2">Personal Portfolio &amp; Web Projects</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="module-tag"><span class="dot dot-green"></span> <span data-i18n="contact.tag">// CONTACT</span></span>
+      <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+    </div>
+    <div class="contact-content centered">
+      <div class="contact-info">
+        <div class="contact-card">
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details"><h3 data-i18n="contact.email">Email</h3><a href="mailto:zhaobowen622@gmail.com" class="animated-link">zhaobowen622@gmail.com</a></div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fas fa-phone"></i></div>
+            <div class="contact-details"><h3 data-i18n="contact.phone">Phone</h3><a href="tel:+34675260089" class="animated-link">+34 675 260 089</a></div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fab fa-github"></i></div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <div class="github-accounts">
+                <div class="github-account"><a href="https://github.com/BowenZhao-dev" target="_blank" class="animated-link">BowenZhao-dev</a><span class="github-account-desc" data-i18n="contact.gh1">Professional work, school-related</span></div>
+                <div class="github-account"><a href="https://github.com/RjZude45OC" target="_blank" class="animated-link">RjZude45OC</a><span class="github-account-desc" data-i18n="contact.gh2">Personal projects</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-details"><h3>LinkedIn</h3><a href="https://www.linkedin.com/in/bowen-zhao-dev/" target="_blank" class="animated-link">bowen-zhao-dev</a></div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details"><h3 data-i18n="contact.location">Location</h3><p>San Juan, Alicante, España</p><span class="tiny-note" data-i18n="contact.relocate">Open to relocation for the right role</span></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo"><img src="https://avatars.githubusercontent.com/u/94955173?v=4&size=64" alt="Bowen Zhao" class="logo-img"></div>
+      <div class="social-links">
+        <a href="https://github.com/BowenZhao-dev" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bowen-zhao-dev/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; <span id="year"></span> Bowen Zhao. <span data-i18n="footer.rights">All Rights Reserved.</span></p></div>
+  </div>
+</footer>
+
+<div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
